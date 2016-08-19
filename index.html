@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ANSTA Quest</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.min.js"></script>	
+</head>
+<body>
+	<div class="base_design">
+		<div class="container">
+			<ul class="nav nav-tabs .col-md-12">
+				<li role="presentation"><a href="#add_panel">Add new user</a></li>
+				<li role="presentation"><a href="#list_of_users">List of users</a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<div id="add_panel">
+				<div class="row">
+					<div class="col-md-12">
+
+						<h2>Add new user </h2>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="names">Names:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="names" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="surname">Surname:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="surname" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="age">Age:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="age" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="gender">Gender:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="gender" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="dateOfBirth">Date of birth:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="dateOfBirth" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="placeOfBirth">Place of birth:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="placeOfBirth" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="nameOfMother">Name of mother:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="nameOfMother" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="surnameOfMother">Surname of mother:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="surnameOfMother" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="nameOfFather">Name of father:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="nameOfFather" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="famSurname">Family name:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="famSurname" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="idKind">Type of ID:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="idKind" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="idIssuingAuthority">ID Issuing Authority:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="idIssuingAuthority" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="numberOfId">Number of ID:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="numberOfId" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="citizenship">Citizenship:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="citizenship" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="pesel">PESEL:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="pesel" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="nip">NIP:</label>
+						</p>
+
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="nip" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="nationality">Nationality:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="nationality" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="street">Street:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="street" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="houseNumber">Number of house:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="houseNumber" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="code">Postal code:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="code" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="city">City:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="city" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="email">E-mail:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="email" class="inputs">
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="telephone">Telephone number:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="telephone" class="inputs">
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<label for="lvlOfEducation">Level of education:</label>
+						</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<p>
+							<input type="text" id="lvlOfEducation" class="inputs">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<input type="button" value="ADD TO LIST" id="add_to_list" class="buttons">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="name-of-col">
+						<h2>List</h2>
+					</div>
+					<div class="list">
+						<div id="list_of_users">
+						</div>
+					</div>
+					<div class="list-pages">
+						<input type="button" id="first_page" value="first page" class="buttons">
+						<input type="button" id="previous_page" value="<" class="buttons">
+						<span id="page">1</span>/<span id="number_of_pages">1</span>
+						<input type="button" id="next_page" value=">" class="buttons">
+						<input type="button" id="last_page" value="last page" class="buttons">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="name-of-col">
+						<h2>Details</h2>
+					</div>
+					<div id="user_details"></div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+		</script>
+		<script src="script.js"></script>
+	</div>
+</body>
+</html>
