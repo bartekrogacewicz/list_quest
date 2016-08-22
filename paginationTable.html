@@ -1,0 +1,49 @@
+<div class="base_design">
+  <div class="title">
+    <h2>Here you can find specific informations about your users</h2>
+  </div>
+  <hr>
+  <div class="title">
+    <h3>Find your users</h3>
+    Names:
+    <input type="text" class="inputs" ng-model="search.names">
+    Surname:
+    <input type="text" class="inputs" ng-model="search.surname">
+  </div>
+  <hr>
+  <div class="title">
+    <h3>List of users</h3>
+    <p>Click on user's name to show all informations</p>   
+  </div>
+  <uib-accordion close-others="oneAtATime">
+    <div uib-accordion-group class="user-row" ng-repeat="person in pagedData | filter:search | limitTo:pageSize">
+     <uib-accordion-heading>
+      {{person.names}}
+      {{person.surname}}
+    </uib-accordion-heading>
+    <p><b>Names: </b> {{person.names}} </p>
+    <p><b>Last Name: </b> {{person.surname}} </p>
+    <p><b>Gender: </b> {{person.gender}} </p>
+    <p><b>Address: </b></p>
+    <p><b>Street: </b> {{person.street}} {{person.houseNumber}} </p>
+    <p><b>Postal code and City: </b> {{person.code}} {{person.city}} </p>
+    <p><b>Place and Date of Birth: </b> {{person.placeOfBirth}} {{person.dateOfBirth}} </p>
+    <p><b>Nationality: </b> {{person.nationality}}  <b>Citizenship: </b> {{person.citizenship}} </p>
+    <p><b>PESEL: </b> {{person.pesel}} <b>NIP: </b> {{person.nip}} </p>
+    <p><b>Mother's name: </b> {{person.nameOfMother}}  <b>Mother's surname: </b> {{person.surnameOfMother}} </p>
+    <p><b>Father's name: </b> {{person.nameOfFather}}  <b>famSurname: </b> {{person.famSurname}} </p>
+    <p><b>ID information:</b></p>
+    <p><b>Type of ID: </b> {{person.idKind}} <b>ID Issuing Authority: </b> {{person.idIssuingAuthority}} </p>
+    <p><b>Number of ID: </b> {{person.numberOfId}} </p>
+    <p><b>Contact: </b></p>
+    <p><b>E-mail: </b> {{person.email}} </p>
+    <p><b>Telephone number: </b> {{person.telephone}} </p>
+    <p><b>Level of education: </b> {{person.lvlOfEducation}} </p>
+  </div>
+</uib-accordion>
+<hr>
+<div class="title">
+  <button ng-click="paginate(-1)" ng-disabled="currentPage == 0" class="buttons" >Previous</button> {{currentPage + 1}} / {{totalPages}}
+  <button ng-click="paginate(1)" ng-disabled="currentPage == totalPages - 1" class="buttons" >Next</button>
+</div>
+</div>
